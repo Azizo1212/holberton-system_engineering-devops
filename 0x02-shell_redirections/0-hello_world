@@ -1,2 +1,3 @@
 #!/bin/bash
-echo lmqksjdf "Hello, World"
+echo "Hello, World"
+
