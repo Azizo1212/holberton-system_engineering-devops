@@ -3,11 +3,15 @@
 i=0
 while [ $i -le 9 ]
 do 
-	if [ $i = 8 ]
+	if [ $i = 3 ]
 	then
-		echo "Hi"
+		echo "bad luck"
+        elif [ $i = 7 ]
+	then
+		echo "good luck"
 	else
 		echo "Best School"
 	fi
 	((i++))	
 done
+
