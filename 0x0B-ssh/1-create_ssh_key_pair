@@ -1,0 +1,3 @@
+#!/bin/bash
+#key generate
+ssh-keygen -f school -b 4096 -N betty
