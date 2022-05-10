@@ -1,0 +1,1 @@
+sudo ssh -i ~/.ssh/school unbuntu@35.237.143.24
