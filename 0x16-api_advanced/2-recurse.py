@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Module for task 2"""
+"""queries the Reddit API and returns a list """
 
 import requests
 import json
 
 
 def recurse(subreddit, list=[], count=0, after=None):
-
+    """ytfg"""
     req = requests.get("https://www.reddit.com/r/{}/hot.json"
                        .format(subreddit),
                        params={"count": count, "after": after},
