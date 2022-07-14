@@ -4,21 +4,21 @@
 import requests
 import json
 
+
 def recurse(subreddit, list=[], count=0, after=None):
 
-
     req = requests.get("https://www.reddit.com/r/{}/hot.json"
-                            .format(subreddit),
-                            params={"count": count, "after": after},
-                            headers={"User-Agent": "Aziz"},
-                            allow_redirects=False)
+                       .format(subreddit),
+                       params={"count": count, "after": after},
+                       headers={"User-Agent": "Aziz"},
+                       allow_redirects=False)
 
     if req.status_code >= 400:
         return None
 
     ml = list + [child.get("data").get("title")
-                        for child in req.json().get("data")
-                        .get("children")]
+                 for child in req.json().get("data")
+                 .get("children")]
 
     reqs = req.json()
     if not reqs.get("data").get("after"):
