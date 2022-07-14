@@ -18,4 +18,4 @@ def top_ten(subreddit):
                 print(posts.get("data").get("title"))
                 count += 1
     else:
-        print (None)
+        print(None)
