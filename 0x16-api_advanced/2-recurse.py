@@ -2,7 +2,6 @@
 """queries the Reddit API and returns a list """
 
 import requests
-import json
 
 
 def recurse(subreddit, list=[], count=0, after=None):
